@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /Users/bigsurs/Downloads/
+
+ls -ltr | awk '{ field = $NF }; END{ print field }' | xargs -I '{}' mv '{}' CV.pdf
